@@ -8,7 +8,7 @@ class Mango {
         }
         
         this.body = Bodies.circle(x,y,27,options);
-        this.width = 60
+        this.r = 27
 
         this.image = loadImage("sprites/mango.png")
         World.add(world, this.body);
@@ -22,7 +22,7 @@ class Mango {
         imageMode(CENTER);
         ellipseMode(CENTER);
         fill ("white")
-        image(this.image,0,0,60, 60);
+        image(this.image,0,0,27, 27);
         pop ()
     }       
 };
